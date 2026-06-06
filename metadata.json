@@ -1,0 +1,6 @@
+{
+  "name": "Kinetic",
+  "description": "A Kinetic Typography video editor that syncs lyrics to music for dramatic, animated calligraphy edits.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
