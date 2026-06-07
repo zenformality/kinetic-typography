@@ -7,7 +7,7 @@ export interface Word {
 
 export type AppStep = 'upload' | 'lyrics' | 'sync' | 'play';
 
-export type ThemeType = 'energetic' | 'depressing' | 'happy';
+export type ThemeType = 'energetic' | 'depressing' | 'happy' | 'nostalgic';
 
 export interface Song {
   id: string;

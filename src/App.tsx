@@ -7,7 +7,8 @@ import { Loader2, Music2 } from 'lucide-react';
 const SONGS: Song[] = [
   { id: '1', title: 'Her', audioUrl: '/audio.mp3', lyricsUrl: '/her.lrc', theme: 'energetic' },
   { id: '2', title: 'Raindance', audioUrl: '/audio2.mp3', lyricsUrl: '/lyrics2.lrc', theme: 'depressing' },
-  { id: '3', title: 'Made in Japan', audioUrl: '/audio3.mp3', lyricsUrl: '/lyrics3.lrc', theme: 'happy' }
+  { id: '3', title: 'Made in Japan', audioUrl: '/audio3.mp3', lyricsUrl: '/lyrics3.lrc', theme: 'happy' },
+  { id: '4', title: 'I Thought I Saw Your Face', audioUrl: '/I Thought I Saw Your Face Today_spotdown.org.mp3', lyricsUrl: '/She & Him - I Thought I Saw Your Face Today.lrc', theme: 'nostalgic' }
 ];
 
 export default function App() {
@@ -57,11 +58,13 @@ export default function App() {
                   ? 'bg-[#afd69b]/10 border-[#afd69b]/20 hover:border-[#afd69b]' 
                   : song.theme === 'happy'
                   ? 'bg-[#507FA9]/10 border-[#507FA9]/20 hover:border-[#507FA9]'
+                  : song.theme === 'nostalgic'
+                  ? 'bg-[#fff487]/10 border-[#fff487]/20 hover:border-[#fff487]'
                   : 'bg-zinc-900 border-zinc-800 hover:border-zinc-600'
               }`}
             >
               <h2 className={`text-2xl font-bold mb-2 group-hover:scale-105 transition-transform ${
-                song.theme === 'energetic' ? 'text-[#afd69b]' : song.theme === 'happy' ? 'text-[#507FA9]' : 'text-zinc-400 font-serif'
+                song.theme === 'energetic' ? 'text-[#afd69b]' : song.theme === 'happy' ? 'text-[#507FA9]' : song.theme === 'nostalgic' ? 'text-[#fff487] font-nostalgic' : 'text-zinc-400 font-serif'
               }`}>
                 {song.title}
               </h2>
